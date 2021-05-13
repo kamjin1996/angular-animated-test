@@ -1,0 +1,9 @@
+<p>
+  open-close works!
+</p>
+
+<div [@openClose]="isOpen ? 'open' : 'close'" class="open-close-container">
+  <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+</div>
+
+<button (click)='toggle()'>切换</button>
